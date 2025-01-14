@@ -14,8 +14,5 @@ export default function AppLayout() {
     );
   }
 
-  if (!isLogged) return <Redirect href='/sign-in' />;
-
-  return <Slot />;
+  return isLogged ? <Slot /> : <Redirect href='/sign-in' />;
 }
-//PROBLEM do naprawy 1:15
