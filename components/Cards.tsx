@@ -38,7 +38,7 @@ export const FeaturedCard = ({
         <Text className='text-base font-rubik text-white'>{address}</Text>
         <View className='flex flex-row items-center justify-between w-full'>
           <Text className='text-xl font-rubik-extrabold text-white'>
-            {price}
+            $ {price}
           </Text>
           <Image source={icons.heart} className='size-5' />
         </View>
@@ -59,7 +59,7 @@ export const Card = ({
       <View className='"flex flex-row items-center absolute px-2 top-5 right-5 bg-white/90 p-1 rounded-full z-50"'>
         <Image source={icons.star} className='size-2.5' />
         <Text className='text-xs font-rubik-bold text-primary-300 ml-0.5'>
-          4.4
+          {rating}
         </Text>
       </View>
       <Image source={{uri: image}} className='w-full h-40 rounded-lg' />
@@ -68,7 +68,7 @@ export const Card = ({
         <Text className='text-xs font-rubik text-black-200'>{address}</Text>
         <View className='flex flex-row items-center justify-between mt-2'>
           <Text className='text-base font-rubik-bold text-primary-300'>
-            {price}
+            $ {price}
           </Text>
           <Image
             source={icons.heart}
